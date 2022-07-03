@@ -45,11 +45,11 @@ Hoje a infraestrutura está configurada de forma primitiva porém economica, est
   - Kibana
 
 - Custom images
-  - Where.Web.API (<https://github.com/eduardoworrel/Onde-estou-no-Brasil/blob/main/Where.Web.API/src/dockerfile>)
+  - Where.Web.API [[dockerfile](<https://github.com/eduardoworrel/Onde-estou-no-Brasil/blob/main/Where.Web.API/src/dockerfile>)]
     - Golang
-  - Palavras.Web.API (<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Web.API/dockerfile>)
+  - Palavras.Web.API [[dockerfile](<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Web.API/dockerfile>)]
     - ASP.NET
-  - Palavras.Background.ETL (<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Background.ETL/dockerfile>)
+  - Palavras.Background.ETL [[dockerfile](<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Background.ETL/dockerfile>)]
     - NodeJS + google-chrome-stable
 
 [3] Sistemas PHP
