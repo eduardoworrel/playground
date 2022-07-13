@@ -1,0 +1,28 @@
+@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v30/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2')}.material-icons{font-family:'Material Icons';font-weight:400;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}.myStart button i{color:rgb(255,110,64)}.myStart{display:none}.group{margin-top:10px}.input_defaut{font-family:'Roboto',cursive;width:100%;background:#cdcdcd;border:none;padding:2%}.notie-alert{    z-index: 2147483647 !important;
+}.l_input{font-family:'Roboto',cursive;font-size:1.2em;color:#4d4d4d;margin-left:15px}.painel{width:85%;padding:5%;border-radius:10px;box-shadow:2px 2px 3px 0 rgba(66,163,182,.3);margin:0 auto 0}.text-legend{color:  #131a21 !importantf}.detail-acentued{color:#183b49}.al{font-size:3em;color:rgb(66,163,182);font-family:'Lobster',cursive}.detail-legend,
+/*.reded{font-size: 30px;color: #b4b297 !important;}*/
+.reded{font-size: 45px;
+    color: #b4b297 !important;
+    position: fixed;
+    /*top: 10px;*/
+    right: 10px;}
+
+.mdl-card{width:100%}.qwe{text-align:justify;padding-top:8em;margin:0 auto;width:40%}.pbtn:hover{text-decoration:none;color:#9d9d9d;border-color:#9d9d9d}.pbtn{cursor:pointer;transition:.4s all;border:2px solid #3f3f3f;color:#3f3f3f;padding:10px;margin-left:15px;text-decoration:none}.all{min-height:100%;background:#151515;color:#9d9d9d}.noPadding{padding:0}.myAvCoplation{font-size:4em;height:90px}.fot{border-radius:10px;display:table}.lanchoneteOnSelect{background:transparent;padding:10px}input[type=range]{-webkit-appearance:none;width:100%;margin:20.8px 0}input[type=range]:focus{outline:none}input[type=range]::-webkit-slider-runnable-track{width:100%;height:8.4px;cursor:pointer;box-shadow:1px 1px 1px #000000,0 0 1px #0d0d0d;background:#43a7b6;border-radius:1.3px;border:.2px solid #010101}input[type=range]::-webkit-slider-thumb{box-shadow:1px 1px 1px #000000,0 0 1px #0d0d0d;border:1px solid #000;height:50px;width:50px;border-radius:3px;background:rgba(255,255,255,.69);cursor:pointer;-webkit-appearance:none;margin-top:-21px}input[type=range]:focus::-webkit-slider-runnable-.navbar-default{background-color:whitesmoke;display:none;border-radius:0;border:none;-webkit-box-shadow:0 6px 5px 0 rgba(0,0,0,.75);-moz-box-shadow:0 6px 5px 0 rgba(0,0,0,.75);box-shadow:0 6px 5px 0 rgba(0,0,0,.75)}.navbar-default .navbar-brand{color:#eac0c9}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#ecdbff}.navbar-default .navbar-text{color:#eac0c9}.navbar-default .navbar-nav>li>a{color:#eac0c9}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#ecdbff}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#ecdbff;background-color:#ad3a55}.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus{color:#ecdbff;background-color:#ad3a55}.navbar-default .navbar-toggle{border-color:#ad3a55}.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#ad3a55}.navbar-default .navbar-toggle .icon-bar{background-color:#eac0c9}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#eac0c9}.navbar-default .navbar-link{color:#eac0c9}.navbar-default .navbar-link:hover{color:#ecdbff}@media (max-width:767px){.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#eac0c9}.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{color:#ecdbff}.navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{color:#ecdbff;background-color:#ad3a55}}
+.navbar-fixed-bottom {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    background: whitesmoke;
+}
+.navbar-fixed-bottom, .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+}
+@media (min-width: 768px){
+.modal-dialog {
+    width: 400px !important;
+}
+}

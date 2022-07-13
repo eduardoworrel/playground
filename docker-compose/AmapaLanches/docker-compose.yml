@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context:  ../../Amapa-Lanches/.
+      dockerfile: Dockerfile
+    image: apl
+    container_name: apl-app
+    restart: unless-stopped
+    ports:
+      - 8082:80
+    environment:
+      - connectionString=mysql:host=localhost;dbname=apl;charset=utf8
+      - login=root
+      - senha=qwerty

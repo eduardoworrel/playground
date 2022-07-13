@@ -1,0 +1,520 @@
+<div class="escondido">
+    <section id="modais">
+        <section class="forModalLanchonete">
+        </section>
+        <div  id="gestao" class="modal fade " tabindex="-1" role="dialog">
+            <div class="modal-dialog " >
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <button class="close mdl-button mdl-js-button  mdl-js-ripple-effect" data-dismiss="modal">
+                            <i class="reded material-icons">close</i>
+                        </button>
+                        <!--<img style="width: 100%; " src="assets/$_imgs/instrucoes.png?x=y">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+                <div class="modal fade instru" tabindex="-1" role="dialog">
+                    <div class="modal-dialog " >
+                        <div class="modal-content">
+        
+                            <div class="modal-body">
+        
+                                <img onclick="myLocation()" id="getLo" style="width: 100%;margin-top: 30px" 
+                                     src="assets/$_imgs/goGPS.png">
+                                <div class="text-center">
+                                    <img data-dismiss="modal" style="margin-top: 10px" src="assets/$_imgs/goNoGPS.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade noMeuPe">
+                    <div class="modal-dialog " role="document">
+                        <div class="modal-content">
+                            <div class="modal-body" id="_noPe" >
+        
+                            </div>
+                        </div>
+                    </div>
+        </div>--->        
+        <div class="modal fade detalhe-lanchonete">
+            <div class="modal-dialog modal-bottom" role="document">
+                <div class="modal-content">
+                    <div class="modal-body col-xs-12" id="_dlContent" >
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="modal fade" id="menu">
+    <div class="modal-dialog especialModal principalModal">
+        <div class="modal-content">
+            <div class="modal-body" style="display: table; width: 100%;">      
+                <div class="col-xs-12">
+                    <img src="assets/$_imgs/controls/friendship.svg" width="70px" style="
+                         margin: 15px;
+                         ">
+                    <button style="min-height: 80px ;
+                            margin-right: -35px;" class="close mdl-button mdl-js-button pull-right  mdl-js-ripple-effect" data-dismiss="modal">
+                        <img src="assets/$_imgs/controls/map-location.svg" width="60px">
+                        <i style="   
+                           font-size: 60px;
+                           margin-top: 5px;
+                           margin-right: 0px;
+                           margin-left: -15px;
+                           " class=" material-icons theColor">
+                            chevron_right
+                        </i>
+                    </button>
+
+                </div>
+                <div class="aplication col-xs-12">
+
+                    <div class="col-xs-6 min-pd">
+                        <div class="col-xs-12 text-center exploraDono" style="
+                             transition: all 1s;
+                             padding: 15px;
+                             background: #ffffff;
+                             background: #ffffffa3;
+                             border-radius: 5px;
+                             box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+                             display: table;
+                             margin-top: 10px;
+
+                             min-height: 195px;
+                             ">
+                            <div class="col-xs-12">
+                                <img style="width: 100%;margin-top: 0px;" 
+                                     src="assets/$_imgs/controls/dono.svg">
+                                <p style="margin-top: 10px">DONO DE LANCHONETE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 min-pd " id="exploraUser" >
+                        <div class="col-xs-12  text-center" style="transition: all 1s;
+                             padding: 15px;
+                             background: #ffffff;
+                             background: #ffffffa3;
+                             border-radius: 5px;
+                             box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+                             display: table;
+                             margin-top: 10px;
+                             min-height: 195px;
+                             ">
+                            <div class="col-xs-12">
+                                <img style="width: 100%;margin-top: 0px;" 
+                                     src="assets/$_imgs/controls/users.svg">
+                                <p style="margin-top: 20px">USUÁRIO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12  touserLoged" style="display:none">
+
+                    <span style="    
+                          margin-left:  20px;
+                          display: inline-block;
+                          background: #e4eaef;
+                          padding: 15px;
+                          border-radius: 10px;">
+                        <img src="" class="toLogedUImage" width="50">
+                    </span>
+
+                    <span style="    margin-right: 20px;
+                          display: inline-block;
+                          float: right;
+                          background: #e4eaef;
+                          padding: 13px;
+                          border-radius: 10px;">
+                        <img src="assets/$_imgs/controls/users.svg" width="55">
+                    </span>
+
+                    <div class="col-xs-12 noPadding" style="    box-shadow: 1px -5px 1.5px 0 rgba(0,0,0,.12), -1px -2px 1px 0 rgba(0,0,0,.24);
+                         background: aliceblue;
+                         border-radius: 10px;
+                         padding: 10px;
+                         margin-top: -10px;
+                         padding-top: 15px;">
+                        <h5>Agora voce pode fazer comentarios sobre uma lanchonete e em breve muito mais!</h5>
+                    </div>
+                    <span style="
+                          margin-right: 13px;
+                          display: inline-block;
+                          background: #e4eaef;
+                          padding: 15px;
+                          float: right;
+                          border-radius: 10px;
+                          margin-top: -10px;
+                          " class="byebye">
+                        <img src="assets/$_imgs/controls/exit.svg" width="50">
+                    </span>
+                </div>
+                <div class="col-xs-12  touser" style="display:none">
+
+                    <span style="    border-radius: 10px;
+                          margin-left: 20px;
+                          display: inline-block;
+                          background: #e4eaef;
+                          padding: 15px;" class="returnTM">
+                        <span style="color:#4a4846 !important;">
+                            <i style="font-size: 60px" class=" material-icons">
+                                chevron_left
+                            </i>
+                        </span>
+                    </span>
+                    <span style="    margin-right: 20px;
+                          display: inline-block;
+                          float: right;
+                          background: #e4eaef;
+                          padding: 15px;
+                          border-radius: 10px;">
+                        <img src="assets/$_imgs/controls/users.svg" width="60">
+                    </span>
+                    <div class="col-xs-12 noPadding" style="    
+                         box-shadow: 1px -5px 1.5px 0 rgba(0,0,0,.12), -1px -2px 1px 0 rgba(0,0,0,.24);
+                         background: aliceblue;
+                         border-radius: 10px;
+                         padding: 10px;
+                         margin-top: -10px;
+                         padding-top: 15px;">
+                        <div class="etapa1">
+                            <div class="into_user" style="padding: 15px;">
+                                <div >
+                                    <b style="font-size: 18px;">NÚMERO DE CELULAR</b>
+                                    <input type="tel" class="form-control  _tel" id="login" 
+                                           style="height: 66px;font-size: 25px;background-color: rgba(0,0,0,0); margin-bottom: 10px">
+                                    <div class="doRetry none">
+                                        <b style="font-size: 22px;color:#afad92;">CÓDIGO SMS</b>
+                                        <input type="tel" class="form-control retry_codigoSMS " 
+                                               style="height: 66px;font-size: 35px;background-color: rgba(0,0,0,0); margin-bottom: 10px">
+                                    </div>
+                                    <div class="doSenha none">
+                                        <b style="font-size: 18px;">SENHA</b>
+
+                                        <input type="password" class="form-control " id="senha_ac" 
+                                               style="height: 66px;font-size: 45px;background-color: rgba(0,0,0,0); margin-bottom: 10px">
+                                        <div class="fdbk">
+                                        </div>
+                                    </div>
+                                    <button id="_tryLogin"
+                                            style="width: 100%;margin-top: 8px;;" 
+                                            class="mdl-button mdl-js-button mdl-button--raised">
+                                        AVANÇAR
+                                    </button>
+                                </div>
+                                <!--                                <div style="    text-align: center;
+                                                                     margin: 20px auto;
+                                                                     padding: 15px;
+                                                                     width: 100%;
+                                                                     font-size: 16px;
+                                                                     background: #fffbd0;
+                                                                     background: #fffbd0;;background: #ffffff;
+                                                                     border-radius: 5px;
+                                                                     box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+                                                                     color: #333333;font-weight: 600;" class="criarconta">
+                                                                    CRIAR CONTA
+                                                                </div>
+                                                                <div style="    text-align: center;
+                                                                     margin: 20px auto;
+                                                                     padding: 15px;
+                                                                     width: 100%;
+                                                                     font-size: 16px;
+                                                                     background: #fffbd0;
+                                                                     background: #fffbd0;;background: #ffffff;
+                                                                     border-radius: 5px;
+                                                                     box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+                                                                     color: #333333;font-weight: 600;" class="validarcodigo">
+                                                                    VALIDAR CÓDIDGO SMS
+                                                                </div>-->
+                            </div>
+
+
+
+                            <div style="width: 80%; margin: 20px auto;" class="byUser doCad none">
+                                <div class="returnCadCentral" style="font-size: 30px; margin-right: 45px;    height: 60px;    margin-bottom: 30px; margint-top:10px;
+                                     margin-top:20px;
+                                     ">
+                                    <div class="col-xs-10" style="margin-top: 20px">         
+                                        VOLTAR
+                                    </div>
+                                </div>
+                                <b style="font-size: 18px;">CÓDIGO DO CONVITE</b>
+                                <input type="text" class="form-control getCodeConv" style="height: 66px;font-size: 45px;color: #aeac92;background-color: rgba(0,0,0,0);">
+                                <button style="width: 100%;margin-top: 8px;" 
+                                        class="btTryCad mdl-button mdl-js-button mdl-button--raised">
+                                    AVANÇAR
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <div class="etapa2 hide">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sobre">
+    <div class="modal-dialog " >
+        <div class="modal-content">
+            <div class="modal-body" style="display: table; width: 100%;">
+                <img src="assets/$_imgs/logo1.png" width="70px" style="
+                     margin: 15px;
+                     ">
+                <button style="min-height: 80px ;
+                        margin-right: -35px;" class="close mdl-button mdl-js-button pull-right  mdl-js-ripple-effect" data-dismiss="modal">
+                    <img src="assets/$_imgs/controls/map-location.svg" width="60px">
+                    <i style="   
+                       font-size: 60px;
+                       margin-top: 5px;
+                       margin-right: 0px;
+                       margin-left: -15px;
+                       " class=" material-icons theColor">
+                        chevron_right
+                    </i>
+                </button>
+
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-12 apresentacao theColor">
+                            <h4 class="text-center">SOBRE O AMAPÁ LANCHES</h4>
+                            <p>
+                                O projeto foi idealizado sobre uma proposta 
+                                parcialmente simples.
+                            </p>
+                            <p>
+                                Criar uma solução que englobe os mais variados 
+                                tipos de lanches e lanchonetes, trazendo o 
+                                alcance da tecnologia aos empresários regionais
+                                das variadas classes sociais.
+                            </p>
+                            
+
+                            <p class="pull-right" style="
+                               margin-top: 30px;
+                               padding: 5px;
+                               color: #333333;
+                               background: #fffbd0;
+                               background: #ffffff;
+                               border-radius: 5px;
+                               box-shadow: 0 1px 1.5px 0 rgba(0,0,0,.12), 0 1px 1px 0 rgba(0,0,0,.24);
+                               display: inline-flex;
+                               vertical-align: middle;
+                               /*line-height: 50px;*/
+                               /*font-size: 24px;*/
+                               /*height: 60px;*/
+                               ">
+                                Feito com Amor.
+                            </p>         
+                            <p>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade lanchonetes">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body " style="display: table; width: 100%; ">
+                <img src="assets/$_imgs/controls/newspaper.svg" width="70px" style="
+                     margin: 15px;
+                     ">
+
+                <button style="min-height: 80px ;
+                        margin-right: -35px;" 
+                        class="close mdl-button mdl-js-button pull-right  mdl-js-ripple-effect" data-dismiss="modal">
+                    <img src="assets/$_imgs/controls/map-location.svg" width="60px" >
+                    <i style="   
+                       font-size: 60px;
+                       margin-top: 5px;
+                       margin-right: 0px;
+                       margin-left: -15px;
+                       " class=" material-icons theColor">
+                        chevron_right
+                    </i>
+
+                </button>
+                <div class="col-xs-12 noPadding  placeLanchonetes" >
+                    <div class="col-xs-12 noPadding" style="margin: 10px auto;text-align: center;">
+                        <div class="col-xs-12 noPadding" style="margin-bottom: -20px;">
+                            <div class="min-pd col-xs-3 oo ak" data-o="2">
+                                <div class="bs">
+                                    <img src="assets/$_imgs/controls/menu.svg" width="80%">
+                                </div>
+                            </div>
+                            <div class="min-pd col-xs-3 oo ak" data-o="0">
+                                <div class="bus naqqq">
+                                    <img src="assets/$_imgs/controls/detective.svg" width="80%">
+                                </div>
+                            </div>
+                            <div class="min-pd col-xs-3 
+                                 "
+                                 >
+                                <!--                                <div class="bus">
+                                                                    <img src="assets/$_imgs/controls/coffee-pot.svg" width="80%">
+                                                                </div>
+                                                                <span> <b>FILTRAR</b></span>-->
+                            </div>                            </div>
+                        <div class="min-pd col-xs-1 "></div>
+                    </div>
+                    <div class="buscar none col-xs-12">
+                        <div class="row" style="margin: 10px auto;">
+                            <form action="javascript:void(0);">
+                                <input type="text" id="buscaWord" class="textbox"
+                                       placeholder="Digite e aguarde 2 segundos">
+                            </form>
+                        </div>  
+                        <div class="forFind none">
+                            <h4 class="forFind none col-xs-12 text-center text-legend">
+                                <span class="resultQT"></span> Encontrada(s)</h4>
+                            <div class="place col-xs-12 noPadding" style="padding-bottom: 30px">
+                            </div>
+                        </div>
+                        <div class="forProximas none">
+                            <div id="exploraProximas" class="cc">
+                                <img src='assets/$_imgs/controls/satellite.svg' width="20%">
+                                <b style="margin-left: 20px;">PROXIMIDADE</b>
+                            </div>
+                            <div id="returnedProximas" class="none">
+                                <div class="cc per1 seeD" data-param="1">
+                                    <img src='assets/$_imgs/controls/destination.svg' width="20%">
+                                    <span style='margin-left:20px'>
+                                        1 KM
+                                    </span>
+                                </div>
+                                <div id="d1" class="none">
+                                </div>
+                                <div class="cc per1 seeD" data-param="2">
+                                    <img src='assets/$_imgs/controls/destination.svg' width="20%">
+                                    <span style='margin-left:20px'>2 a 4 KM
+                                    </span></div>
+                                <div id="d2" class="none">
+                                </div>
+                                <div class="cc per1 seeD" data-param="3">
+                                    <img src='assets/$_imgs/controls/destination.svg' width="20%">
+                                    <span style='margin-left:20px'>4 a 6 KM
+                                    </span></div>
+                                <div id="d3" class="none">
+                                </div>
+                                <div class="cc per1 seeD" data-param="4">
+                                    <img src='assets/$_imgs/controls/destination.svg' width="20%">
+                                    <span style='margin-left:20px'>6 a 10 KM</span></div>
+                                <div id="d4" class="none">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forBairro">
+                            <div id="exploraBairro" class="cc per2">
+
+                                <img src='assets/$_imgs/controls/map.svg' width="20%"> 
+                                <b style="margin-left: 20px;">BAIRRO</b>
+                            </div>
+                            <div id="returnedBairros" class="none">
+
+                            </div>
+
+                        </div>
+                        <div class="forDelivery">
+                            <div id="exploraDelivery" class="cc per2">
+
+                                <img src='assets/$_imgs/controls/motorcycle.svg' width="20%">     
+                                <b style="margin-left: 20px;">DELIVERY</b>
+                            </div>
+                            <div id="returnedDelivery" class="none">
+                            </div>
+                        </div>
+                        <div class="forCartao">
+                            <div id="exploraCartao" class="cc per2">
+                                <img src='assets/$_imgs/controls/credit-card.svg' width="20%">     
+                                <b style="margin-left: 20px;">CARTÃO</b>
+                            </div>
+                            <div id="returnedCartao" class="none">
+                            </div>
+                        </div>
+                        <h4 class="col-xs-12 text-center text-legend">TODAS AS LANCHONETES</h4>
+                        <div class="sugestoes">
+
+                        </div>
+                    </div>
+                    <div class="menu ">
+
+                        <div class="tipos_filter col-xs-12 ">
+
+                        </div>
+                    </div>
+                    <div class="filtro none">
+                        <div class="options col-xs-12 noPadding">
+                            <div class="selecDistancia col-xs-12 min-pd">
+                                <div class="col-xs-2 min-pd text-center">
+                                    <img src='assets/$_imgs/controls/satellite.svg' width="100%"style="margin-top: 40px;">
+                                </div>
+                                <div class="col-xs-10 noPadding">
+                                    <div class="col-xs-6 min-pd">
+                                        <div data-param="1" class=" boxUnSelected tt4">1 KM</div>
+                                    </div>
+                                    <div class="col-xs-6 min-pd">
+                                        <div data-param="4" class="allCartao boxUnSelected tt4">4 KM</div>
+                                    </div>
+                                    <div class="col-xs-6 min-pd">
+                                        <div data-param="6" class="allCartao boxUnSelected tt4">6 KM</div>
+                                    </div>
+                                    <div class="col-xs-6 min-pd">
+                                        <div data-param="9" class="allCartao boxSelected tt4">TODAS</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selecOpen  col-xs-12 min-pd" style="margin-top: 10px;">
+                                <div class="col-xs-2 min-pd">
+                                    <img src='assets/$_imgs/controls/place.svg' width="100%"style="margin-top: 15px;">
+                                </div>
+                                <div class="col-xs-6 min-pd">
+                                    <div data-param="1" class="boxUnSelected tt">APENAS ABERTAS</div>
+                                </div>
+                                <div class="col-xs-4 min-pd">
+                                    <div data-param="0" class="boxSelected tt">TODAS</div>
+                                </div>
+                            </div>
+                            <div class="selecDelivery col-xs-12 min-pd">
+                                <div class="col-xs-2 min-pd">
+                                    <img src='assets/$_imgs/controls/motorcycle.svg' width="100%"style="margin-top: 15px;">
+                                </div>
+                                <div class="col-xs-6 min-pd">
+                                    <div data-param="1" class=" boxUnSelected tt2">APENAS DELIVERY</div>
+                                </div>
+                                <div class="col-xs-4 min-pd">
+                                    <div data-param="0" class="boxSelected tt2">TODAS</div>
+                                </div>
+                            </div>
+                            <div class="selecCartao  col-xs-12 min-pd">
+                                <div class="col-xs-2 min-pd">
+                                    <img src='assets/$_imgs/controls/credit-card.svg' width="100%" style="margin-top: 15px;">
+                                </div>
+                                <div class="col-xs-6 min-pd">
+                                    <div data-param="1" class="boxUnSelected tt3">APENAS CARTÃO</div>
+                                </div>
+                                <div class="col-xs-4 min-pd">
+                                    <div data-param="0" class="boxSelected tt3">TODAS</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
