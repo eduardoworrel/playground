@@ -6,6 +6,8 @@ Afim de praticar os conhecimentos de arquitetura de software, me desafio nesse p
 
 - [x] Conteinerizar as aplicações PHP.
 
+- [ ] Migrar todos os serviços para este repositório.
+
 - [ ] Utilizar um cluster de banco de dados Mysql e descontinuar o uso do SQLServer.
 
 - [ ] Automatizar deploys de todas as aplicações via github Actions.
