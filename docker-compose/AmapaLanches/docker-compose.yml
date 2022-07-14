@@ -2,7 +2,7 @@ version: "3.7"
 services:
   app:
     build:
-      context:  ../../Amapa-Lanches/.
+      context:  ../../apps/Amapa-Lanches/.
       dockerfile: Dockerfile
     image: apl
     container_name: apl-app
@@ -10,6 +10,6 @@ services:
     ports:
       - 8082:80
     environment:
-      - connectionString=mysql:host=localhost;dbname=apl;charset=utf8
+      - connectionString=mysql:host=192.168.1.7;dbname=apl;charset=utf8
       - login=root
       - senha=qwerty

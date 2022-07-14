@@ -3,7 +3,7 @@ version: '3.5'
 services:
   cpz-app:
     build:
-      context: '../../CompraPeloZap/'
+      context: '../../apps/CompraPeloZap/'
       args:
         uid: 1000
     container_name: cpz-app
@@ -17,5 +17,3 @@ services:
       - DB_DATABASE=shop
       - DB_USERNAME=root
       - DB_PASSWORD=qwerty
-    volumes:
-      - ../../CompraPeloZap/src:/var/www/html
