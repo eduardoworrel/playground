@@ -4,17 +4,17 @@ Afim de praticar os conhecimentos de arquitetura de software, me desafio nesse p
 
 ## Metas
 
-- Utilizar um cluster de banco de dados Mysql e descontinuar o uso do SQLServer.
-
 - [x] Conteinerizar as aplicações PHP.
 
-- [] Automatizar deploys de todas as aplicações via github Actions.
+- [ ] Utilizar um cluster de banco de dados Mysql e descontinuar o uso do SQLServer.
+
+- [ ] Automatizar deploys de todas as aplicações via github Actions.
 
 - (talvez) fracionar serviços em maquians virtuais distintas.
 
-- Registrar principais ações e padrões que repetitivamente foram realizados durante o processo de entrega de software para produção
+- [ ] Registrar principais ações e padrões que repetitivamente foram realizados durante o processo de entrega de software para produção
 
-- Desenhar modelo de arquitetura criado
+- [ ] Desenhar modelo de arquitetura criado
 
 ## Ponto de partida
 
