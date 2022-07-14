@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  oenb:
+    build: 
+      context: ../../apps/OndeEstouNoBrasil.Web.API/.
+      dockerfile: Dockerfile
+    image: oenb
+    container_name: oenb-api
+    ports: 
+      - 8085:80
+    environment: 
+      - MAP_TOKEN=

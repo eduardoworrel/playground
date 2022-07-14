@@ -2,7 +2,7 @@ version: "3.7"
 services:
   app:
     build:
-      context:  ../../apps/Amapa-Lanches/.
+      context:  ../../apps/AmapaLanches.Web.APP/.
       dockerfile: Dockerfile
     image: apl
     container_name: apl-app

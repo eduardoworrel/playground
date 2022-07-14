@@ -202,7 +202,7 @@ const start = function() {
                             filtraFuncaoParaHtml(getArray());
                             a = document.createElement("script");
                             a.type = "text/javascript";
-                            a.src = "https://maps.google.com/maps/api/js?v=3&key=[]&callback=initMap";
+                            a.src = "https://maps.google.com/maps/api/js?v=3&key=AIzaSyAKeUiK7zpLo1sVStRi2r7KBPn5hvu9qc4&callback=initMap";
                             $(".e2").html("ok");
                             $(".e3,.x3").show();
                             setTimeout(function() {

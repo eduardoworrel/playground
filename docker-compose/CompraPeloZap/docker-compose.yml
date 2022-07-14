@@ -3,7 +3,7 @@ version: '3.5'
 services:
   cpz-app:
     build:
-      context: '../../apps/CompraPeloZap/'
+      context: '../../apps/CompraPeloZap.Web.APP/'
       args:
         uid: 1000
     container_name: cpz-app
