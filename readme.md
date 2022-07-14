@@ -55,7 +55,7 @@ Hoje a infraestrutura está configurada de forma primitiva porém economica, est
 [3] Sistemas PHP
 
 - Amapá Lanches (<https://github.com/eduardoworrel/Amapa-Lanches>)
-- Tucuju.io (Privado)
+- CompraPeloZap
 
 [4] Sites estáticos
 

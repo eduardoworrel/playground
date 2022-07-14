@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+  cpz-app:
+    build:
+      context: '../../CompraPeloZap/'
+      args:
+        uid: 1000
+    container_name: cpz-app
+    ports:
+      - 8084:80
+    environment:
+      - APACHE_RUN_USER=#1000
+      - APACHE_RUN_GROUP=#1000
+      - DB_HOST=192.168.1.7
+      - DB_PORT=3306
+      - DB_DATABASE=shop
+      - DB_USERNAME=root
+      - DB_PASSWORD=qwerty
+    volumes:
+      - ../../CompraPeloZap/src:/var/www/html
