@@ -1,12 +1,20 @@
 version: "3.7"
 services:
-  oenb:
+  oenb-api:
     build: 
       context: ../../apps/OndeEstouNoBrasil.Web.API/.
       dockerfile: Dockerfile
-    image: oenb
-    container_name: oenb-api
     ports: 
       - 8085:80
     environment: 
       - MAP_TOKEN=
+
+  oenb-spa:
+    build: ../../uis/OndeEstouNoBrasil.Web.SPA/.
+    restart: always
+    depends_on:
+      - oenb-api
+    environment:
+      API: "http://oenb-api:8085"
+    ports:
+      - 8087:80

@@ -2,7 +2,10 @@ import { Box, Button, Heading } from '@dracula/dracula-ui';
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Puff } from 'react-loading-icons'
-const API_IP = "http://localhost:8085/getByIP"
+
+import env from "react-dotenv";
+
+const API_IP =  env.API + "/getByIP"
 const API_MALHAS = "https://servicodados.ibge.gov.br/api/v3/malhas/municipios/"
 const API_MUNICIPIOS = "https://servicodados.ibge.gov.br/api/v1/localidades/municipios"
 

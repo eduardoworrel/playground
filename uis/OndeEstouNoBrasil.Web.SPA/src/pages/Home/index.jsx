@@ -35,7 +35,7 @@ function Home() {
                     </Button>
                 </Link>
             </Box>
-            <Box style={{position:"fixed", bottom:"10px", left:"0", width:"100%"}}>
+            <Box style={{ bottom:"10px", left:"0", width:"100%"}}>
                 <Link to={`/surpreenda`}>
                     <Button color="yellowPink" m="sm">
                        Recorte dos municipios 🗺
