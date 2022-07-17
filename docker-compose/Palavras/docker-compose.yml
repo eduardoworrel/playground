@@ -17,3 +17,14 @@ services:
     environment:
       TZ: "America/Sao_Paulo"
       Token: "SECRET"
+      
+  pmc-spa:
+    build: ../../uis/Palavras.Web.SPA/.
+    restart: always
+    depends_on:
+      - pmc-api
+    environment:
+      API: "http://pmc-api:5001"
+    ports:
+      - 8086:80
+    
