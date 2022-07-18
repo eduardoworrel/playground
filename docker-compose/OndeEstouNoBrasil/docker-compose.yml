@@ -5,7 +5,7 @@ services:
       context: ../../apps/OndeEstouNoBrasil.Web.API/.
       dockerfile: Dockerfile
     ports: 
-      - 8085:80
+      - 7002:80
     environment: 
       - MAP_TOKEN=
 
@@ -15,6 +15,6 @@ services:
     depends_on:
       - oenb-api
     environment:
-      API: "http://oenb-api:8085"
+      API: "http://oenb-api:7002"
     ports:
-      - 8087:80
+      - 7003:80

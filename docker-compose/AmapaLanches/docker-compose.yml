@@ -8,7 +8,7 @@ services:
     container_name: apl-app
     restart: unless-stopped
     ports:
-      - 8082:80
+      - 7000:80
     environment:
       - connectionString=mysql:host=192.168.1.7;dbname=apl;charset=utf8
       - login=root

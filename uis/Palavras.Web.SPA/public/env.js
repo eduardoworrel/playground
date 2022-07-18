@@ -98,5 +98,4 @@ window.env = {
   "npm_command": "run-script",
   "INIT_CWD": "/home/eduardo/Documentos/repos/playground/uis/Palavras.Web.SPA",
   "EDITOR": "vi",
-  "API": "http://pmc-api:5001"
 };
