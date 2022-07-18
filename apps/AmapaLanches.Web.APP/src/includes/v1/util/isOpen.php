@@ -34,9 +34,9 @@ function isOpen($horaAbre, $horaFecha) {
        
         $nowMin = explode(":", $now)[1];
         $openHour = explode(":", $startTime)[0];
-        $openMin = explode(":", $startTime)[1];
+        $openMin = explode(":", $startTime)[1] ?? 0;
         $closeHour = explode(":", $endTime)[0];
-        $closeMin = explode(":", $endTime)[1];
+        $closeMin = explode(":", $endTime)[1] ?? 0;
         // check if current time is within a range
 
 

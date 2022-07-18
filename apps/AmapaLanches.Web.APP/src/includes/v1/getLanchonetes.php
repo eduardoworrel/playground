@@ -26,7 +26,7 @@ if (!isset($v) && !check_int($v, 1, 2)) {
     exit();
 }
 $c = new conexao();
-$ss = unserialize(base64_decode(session("sessao")));
+$ss = unserialize(base64_decode(session("sessao")) ?? []);
 $ft = "";
 
 lanchonete::vistoByUsuario(session_id(), $id, $c->getconexao());

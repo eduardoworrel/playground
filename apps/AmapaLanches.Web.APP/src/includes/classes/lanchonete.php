@@ -222,7 +222,8 @@ class lanchonete {
                 . "HORA_FECHA,"
                 . "LONGITUDE,"
                 . "LATITUDE,"
-                . "ACEITA_CARTAO"
+                . "ACEITA_CARTAO,"
+                . "BAIRRO"
                 . " FROM lanchonetes WHERE ID_LANCHONETE = :id";
         $pst = $instancia->prepare($sql);
         $pst->bindParam(":id", $id, PDO::PARAM_INT);
