@@ -1,5 +1,8 @@
 FROM php:7.4-apache
 
+
+COPY ./src ./
+
 # 1. Install development packages and clean up apt cache.
 RUN apt-get update && apt-get install -y \
     git \
@@ -38,4 +41,3 @@ RUN mkdir -p /home/devuser/.composer && \
     chown -R devuser:devuser /home/devuser
 
 WORKDIR var/www/html
-COPY ./src ./

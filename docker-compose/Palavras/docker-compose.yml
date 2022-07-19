@@ -23,8 +23,6 @@ services:
     restart: always
     depends_on:
       - pmc-api
-    environment:
-      API: "http://pmc-api:7004"
     ports:
       - 7005:80
     
