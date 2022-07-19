@@ -26,7 +26,11 @@ if (!isset($v) && !check_int($v, 1, 2)) {
     exit();
 }
 $c = new conexao();
-$ss = unserialize(base64_decode(session("sessao")) ?? []);
+$ss = [];
+
+if(session("sessao") != NULL){
+    $ss = unserialize(base64_decode(session("sessao"))) ?? [];
+}
 $ft = "";
 
 lanchonete::vistoByUsuario(session_id(), $id, $c->getconexao());
@@ -52,7 +56,10 @@ $isOpen = isOpen(substr($lanchonete->horaAbre, 0, -3), substr($lanchonete->horaF
 
 $_SESSION['lanchonete'] = base64_encode(serialize($lanchonete));
 unset($_SESSION['limit']);
-
+$permissao = -1;
+if($ss != []){
+    $permissao = ($ss->usuario->permissao) ? $ss->usuario->permissao : -1;
+}
 $post_data = json_encode(array('lanchonete' =>
     array
         (
@@ -69,7 +76,7 @@ $post_data = json_encode(array('lanchonete' =>
         "telefone" => $lanchonete->telefone,
         "entrega" => $lanchonete->entrega,
         "avaliacao" => $avaliacao,
-        "permissao" => ($ss->usuario->permissao) ? $ss->usuario->permissao : -1,
+        "permissao" => $permissao,
         "hasSee" => $hs,
         "view" => $v,
         "ft" => $ft,
