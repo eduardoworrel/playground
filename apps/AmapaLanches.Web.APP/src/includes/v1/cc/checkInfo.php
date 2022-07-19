@@ -5,9 +5,12 @@ include_once '../../modelo/conexao.php';
 include_once '../../classes/usuario.php';
 include_once '../../classes/sessao.php';
 include_once '../../input_filter.php';
+$ss = NULL;
 
-$ss = unserialize(base64_decode(session('sessao')));
-//var_dump($_SESSION);
+if(session("sessao") != NULL){
+    $ss = unserialize(base64_decode(session("sessao"))) ?? [];
+}
+
 $ft;
 if (isset($ss)) {
     $c = new conexao();

@@ -33,7 +33,7 @@ if (isset($_SESSION['foo']) && isset($_GET['foo'])) {
                     "bairro" => $lanchonete['BAIRRO'],
                     "horaAbre" => $lanchonete['HORA_ABRE'],
                     "horaFecha" => $lanchonete['HORA_FECHA'],
-                    "avaliacao" => $lanchonete['AVALICAO'] ? $lanchonete['AVALICAO'] : 3,
+                    "avaliacao" => $avaliacao,
                     "hasSee" => $howMuch,
                     "aceita_cartao" => $lanchonete['ACEITA_CARTAO'],
 //            "telefone" => $lanchonete->telefone,

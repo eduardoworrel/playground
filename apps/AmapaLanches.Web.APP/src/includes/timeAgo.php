@@ -20,8 +20,8 @@ function time_elapsed_string($datetime, $full = false, $idade = false) {
     foreach ($string as $k => &$v) {
         if ($diff->$k) {
             $v = $diff->$k . ' ' . $v . ($diff->$k > 1 && $v == 'm' ?
-                    'es' : $diff->$k > 1 && $v != 'm' ?
-                    's' : '');
+                    'es' : ($diff->$k > 1 && $v != 'm' ?
+                    's' : ''));
         } else {
             unset($string[$k]);
         }
