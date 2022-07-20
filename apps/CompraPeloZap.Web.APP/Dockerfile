@@ -46,4 +46,6 @@ RUN composer install
 WORKDIR /var/www/html
 RUN php artisan storage:link
 
+RUN sudo chown www-data:www-data -R /var/www/html/
+RUN sudo chown www-data:www-data -R /var/www/html/bootstrap/cache
 
