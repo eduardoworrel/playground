@@ -41,3 +41,10 @@ RUN mkdir -p /home/devuser/.composer && \
     chown -R devuser:devuser /home/devuser
 
 WORKDIR var/www/html
+
+RUN composer install
+
+RUN php artisan storage:link
+RUN php artisan key:generate
+
+
