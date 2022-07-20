@@ -46,6 +46,8 @@ RUN composer install
 WORKDIR /var/www/html
 RUN php artisan storage:link
 
+#https://www.digitalocean.com/community/tutorials/how-to-deploy-a-laravel-application-with-nginx-on-ubuntu-16-04
 RUN chown www-data:www-data -R /var/www/html/
 RUN chown www-data:www-data -R /var/www/html/bootstrap/cache
-
+RUN chgrp -R www-data storage bootstrap/cache
+RUN chmod -R ug+rwx storage bootstrap/cache
