@@ -43,6 +43,7 @@ RUN mkdir -p /home/devuser/.composer && \
 
 RUN composer install
 
+WORKDIR /var/www/html
 RUN php artisan storage:link
 RUN php artisan key:generate
 
