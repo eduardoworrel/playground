@@ -10,9 +10,9 @@ Afim de praticar os conhecimentos de arquitetura de software, me desafio nesse p
 
 - [ ] Automatizar deploys de todas as aplicações.
 
-- (talvez) fracionar serviços em maquians virtuais distintas.
+- [x] fracionar serviços em maquians virtuais distintas.
 
-- [ ] Registrar principais ações e padrões que repetitivamente foram realizados durante o processo de entrega de software para produção
+- [x] Registrar principais ações e padrões que repetitivamente foram realizados durante o processo de entrega de software para produção
 
 - [ ] Desenhar modelo de arquitetura criado
 
