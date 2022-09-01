@@ -1,6 +1,6 @@
 # Playgorund
 
-Afim de praticar os conhecimentos de arquitetura de software, me desafio nesse projeto a configurar a infraestrutura e os pipelines de todas as aplicações que já desenvolvi e estão no ar hoje.
+Todos os sistemas publicos que desenvolvi e mantenho no ar.
 
 ## Metas
 
@@ -8,17 +8,18 @@ Afim de praticar os conhecimentos de arquitetura de software, me desafio nesse p
 
 - [x] Migrar todos os serviços para este repositório.
 
-- [ ] Automatizar deploys de todas as aplicações.
+- [x] Automatizar deploy de todas as aplicações com docker compose.
 
 - [x] fracionar serviços em maquians virtuais distintas.
 
-- [x] Registrar principais ações e padrões que repetitivamente foram realizados durante o processo de entrega de software para produção
-
-- [ ] Desenhar modelo de arquitetura criado
-
 ## Ponto de partida
 
-Hoje a infraestrutura está configurada de forma primitiva porém economica, estando todas as aplicações back-end (seja em containers ou não) e front-end em uma unica maquina virtual  Ubuntu de 2GB e 50GB de disco.
+Antes a infraestrutura estava configurada de forma primitiva porém economica, estando todas as aplicações back-end (seja em containers ou não) e front-end em uma unica maquina virtual  Ubuntu de 2GB e 50GB de disco.
+
+## Atualmente
+
+Hoje existe uma maquina virtual de 500MB e 10GB de disco responsável por rodar os serviços oficiais e uma de 1GB e 25GB de disco para os meus sistemas
+
 
 <details>
 <summary> Lista de softwares rodando </summary>
@@ -34,7 +35,7 @@ Hoje a infraestrutura está configurada de forma primitiva porém economica, est
 - Docker (<https://www.docker.com/>) & Docker Compose (<https://docs.docker.com/compose/>)
   - Conteinerização
 - Git (<https://git-scm.com/>)
-- PHP
+
 
 [2] Containers
 
@@ -47,21 +48,15 @@ Hoje a infraestrutura está configurada de forma primitiva porém economica, est
 - Custom images
   - Where.Web.API [[dockerfile](<https://github.com/eduardoworrel/Onde-estou-no-Brasil/blob/main/Where.Web.API/src/dockerfile>)]
     - Golang
+  - Palavras.Web.SPA [[dockerfile](<https://github.com/eduardoworrel/playground/blob/master/uis/Palavras.Web.SPA/dockerfile>)]
+    - ASP.NET
   - Palavras.Web.API [[dockerfile](<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Web.API/dockerfile>)]
     - ASP.NET
   - Palavras.Background.ETL [[dockerfile](<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Background.ETL/dockerfile>)]
     - NodeJS + google-chrome-stable
-
-[3] Sistemas PHP
-
-- Amapá Lanches (<https://github.com/eduardoworrel/Amapa-Lanches>)
-- CompraPeloZap
-
-[4] Sites estáticos
-
-- Nomes no Brasil
-- Palavras
-- Onde estou no Brasil
-- eduardoworrel.com
+  - Amapá Lanches [[dockerfile](https://github.com/eduardoworrel/playground/blob/master/apps/AmapaLanches.Web.APP/Dockerfile)]
+    - PHP
+  - CompraPeloZap [[dockerfile](https://github.com/eduardoworrel/playground/blob/master/apps/CompraPeloZap.Web.APP/Dockerfile)]
+    - Laravel
 
 </details>
