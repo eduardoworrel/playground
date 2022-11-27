@@ -49,7 +49,7 @@ Hoje existe uma maquina virtual de 500MB e 10GB de disco responsável por rodar 
   - Where.Web.API [[dockerfile](<https://github.com/eduardoworrel/Onde-estou-no-Brasil/blob/main/Where.Web.API/src/dockerfile>)]
     - Golang
   - Palavras.Web.SPA [[dockerfile](<https://github.com/eduardoworrel/playground/blob/master/uis/Palavras.Web.SPA/dockerfile>)]
-    - ASP.NET
+    - ReactJS
   - Palavras.Web.API [[dockerfile](<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Web.API/dockerfile>)]
     - ASP.NET
   - Palavras.Background.ETL [[dockerfile](<https://github.com/eduardoworrel/Palavras-ETL-ElasticSearch/blob/main/src/Palavras.Background.ETL/dockerfile>)]
